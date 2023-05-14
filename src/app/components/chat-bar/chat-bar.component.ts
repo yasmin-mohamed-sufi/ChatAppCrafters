@@ -20,7 +20,7 @@ export class ChatBarComponent {
     }
 
     if (!this.username) {
-      this.errorMessage = 'Erstellen Sie bitte zuerst einen Nicknament!';
+      this.errorMessage = 'Erstellen Sie bitte zuerst einen Benutzernamen!';
       this.chatMessage = '';
       return;
     }

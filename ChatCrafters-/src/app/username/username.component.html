@@ -1,8 +1,8 @@
 <div class="username">
-    <textarea [(ngModel)]="username" placeholder="Enter your nickname" (keyup.enter)="saveUsername()"
+    <textarea [(ngModel)]="username" placeholder="Erstelle einen Benutzernamen" (keyup.enter)="saveUsername()"
         [disabled]="usernameSaved" maxlength="20"></textarea>
     <button class="username-button" [class.logout]="usernameSaved" (click)="saveUsername()">
-        {{ usernameSaved ? 'Log out' : 'Save' }}
+        {{ usernameSaved ? 'log out' : 'save' }}
     </button>
     <span *ngIf="errorMessage" class="error-message">{{ errorMessage }}</span>
 </div>
