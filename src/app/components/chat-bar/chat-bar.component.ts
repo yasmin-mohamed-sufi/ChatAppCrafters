@@ -12,6 +12,8 @@ export class ChatBarComponent {
   public chatMessage = '';
   public errorMessage = '';
 
+  public soundPath = 'assets/images/tennis_ball_sound.m4a';
+
   public addMessage(message: string): void {
     if (!message.trim()) {
       this.errorMessage = 'Bitte Text eingeben!';
@@ -29,6 +31,12 @@ export class ChatBarComponent {
     this.chatMessage = '';
     this.errorMessage = '';
   }
+
+  public playSound(): void {
+    const audio = new Audio(this.soundPath);
+    audio.play();
+  }
+
 }
 
 
