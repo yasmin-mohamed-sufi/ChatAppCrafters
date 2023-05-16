@@ -45,7 +45,7 @@
 .message-bubble-text {
   background-color: #ffffff;
   border-radius: 20px;
-  border: 2px solid #00802F;
+  border: 2px solid rgba(6, 87, 174, 0.861);
   padding: 10px;
   max-width: 80%;
   margin: 10px;
@@ -66,4 +66,14 @@
 
 div.message-bubble-text strong {
   font-weight: bold;
+}
+
+.custom-background {
+  background-image: url('https://www.allabouttennis.co.uk/wp-content/uploads/2021/05/featured-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.message-bubble-timestamp {
+  color: white; 
 }
